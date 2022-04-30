@@ -9,7 +9,7 @@
  * You you can use array to optimize the code as following:
  * int leds[7] = {2, 3, 4, 5, 6, 7, 8};
  */
-#define delayTime 1000 
+#define DELAYTIME 1000 
 
 
 void setup()
@@ -33,25 +33,25 @@ void setup()
 void loop()
 {
   zero();
-  delay(delayTime);
+  delay(DELAYTIME);
   one();
-  delay(delayTime);
+  delay(DELAYTIME);
   two();
-  delay(delayTime);
+  delay(DELAYTIME);
   three();
-  delay(delayTime);
+  delay(DELAYTIME);
   four();
-  delay(delayTime);
+  delay(DELAYTIME);
   five();
-  delay(delayTime);
+  delay(DELAYTIME);
   six();
-  delay(delayTime);
+  delay(DELAYTIME);
   seven();
-  delay(delayTime);
+  delay(DELAYTIME);
   eight();
-  delay(delayTime);
+  delay(DELAYTIME);
   nine();
-  delay(delayTime);
+  delay(DELAYTIME);
 }
 
 /*

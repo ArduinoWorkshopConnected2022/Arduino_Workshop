@@ -5,7 +5,12 @@
 #define ledE 6
 #define ledF 7
 #define ledG 8
+/*
+ * You you can use array to optimize the code as following:
+ * int leds[7] = {2, 3, 4, 5, 6, 7, 8};
+ */
 #define delayTime 1000 
+
 
 void setup()
 {
@@ -16,6 +21,13 @@ void setup()
   pinMode(ledE, OUTPUT);
   pinMode(ledF, OUTPUT);
   pinMode(ledG, OUTPUT);
+  /*
+   * You can use for loop to optimize the code as following: 
+   * for(int i = 0; i < 7; i++)
+   * {
+   *  pinMode(leds[i], OUTPUT);
+   * }
+   */
 }
 
 void loop()
@@ -41,6 +53,26 @@ void loop()
   nine();
   delay(delayTime);
 }
+
+/*
+ * HINT:
+ * Some compilers show an error if you write the functions after main()
+ * To avoid this, you can add a function prototype before main() as following:
+ * 
+ * void one();    --> prototype
+ * int main()
+ * {
+ *  .
+ *  .
+ *  .
+ * }
+ * void one()     
+ * {
+ *  .
+ *  .
+ *  .
+ * }
+ */
 
 void zero()
 {

@@ -1,15 +1,15 @@
-#define ledA 2
-#define ledB 3
-#define ledC 4
-#define ledD 5
-#define ledE 6
-#define ledF 7
-#define ledG 8
+#define LEDA 2
+#define LEDB 3
+#define LEDC 4
+#define LEDD 5
+#define LEDE 6
+#define LEDF 7
+#define LEDG 8
 /*
  * You you can use array to optimize the code as following:
  * int leds[7] = {2, 3, 4, 5, 6, 7, 8};
  */
-#define DELAYTIME 1000 
+#define DELAY_TIME 1000 
 
 
 void setup()
@@ -33,25 +33,25 @@ void setup()
 void loop()
 {
   zero();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   one();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   two();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   three();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   four();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   five();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   six();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   seven();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   eight();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
   nine();
-  delay(DELAYTIME);
+  delay(DELAY_TIME);
 }
 
 /*
@@ -74,113 +74,140 @@ void loop()
  * }
  */
 
+void even()
+{
+  zero();
+  delay(DELAY_TIME);
+  two();
+  delay(DELAY_TIME);
+  four();
+  delay(DELAY_TIME);
+  six();
+  delay(DELAY_TIME);
+  eight();
+  delay(DELAY_TIME);
+}
+void odd()
+{
+  one();
+  delay(DELAY_TIME);
+  three();
+  delay(DELAY_TIME);
+  five();
+  delay(DELAY_TIME);
+  seven();
+  delay(DELAY_TIME);
+  nine();
+  delay(DELAY_TIME);
+}
+
 void zero()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, HIGH);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, LOW);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, LOW);
 }
 
 void one()
 {
-  digitalWrite(ledA, LOW);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, LOW);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, LOW);
-  digitalWrite(ledG, LOW);
+  digitalWrite(LEDA, LOW);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
 }
 
 void two()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, LOW);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, HIGH);
-  digitalWrite(ledF, LOW);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, HIGH);
 }
 
 void three()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, LOW);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, HIGH);
 }
 
 void four()
 {
-  digitalWrite(ledA, LOW);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, LOW);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, LOW);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
 }
 
 void five()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, LOW);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, LOW);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
 }
 
 void six()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, LOW);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, HIGH);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, LOW);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
 }
 
 
 void seven()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, LOW);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, LOW);
-  digitalWrite(ledG, LOW);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
 }
 
 void eight()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, HIGH);
-  digitalWrite(ledE, HIGH);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
 }
 
 void nine()
 {
-  digitalWrite(ledA, HIGH);
-  digitalWrite(ledB, HIGH);
-  digitalWrite(ledC, HIGH);
-  digitalWrite(ledD, LOW);
-  digitalWrite(ledE, LOW);
-  digitalWrite(ledF, HIGH);
-  digitalWrite(ledG, HIGH);
+  digitalWrite(LEDA, HIGH);
+  digitalWrite(LEDB, HIGH);
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
 }

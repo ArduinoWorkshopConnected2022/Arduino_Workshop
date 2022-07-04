@@ -9,7 +9,7 @@ void setup()
 void loop()
 {
   bool val = digitalRead(PUSH_BUTTON);
-  if(val == 1)
+  if(val == 0)
     digitalWrite(LED, HIGH);
   else
     digitalWrite(LED, LOW);

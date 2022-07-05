@@ -14,13 +14,13 @@
 
 void setup()
 {
-  pinMode(ledA, OUTPUT);
-  pinMode(ledB, OUTPUT);
-  pinMode(ledC, OUTPUT);
-  pinMode(ledD, OUTPUT);
-  pinMode(ledE, OUTPUT);
-  pinMode(ledF, OUTPUT);
-  pinMode(ledG, OUTPUT);
+  pinMode(LEDA, OUTPUT);
+  pinMode(LEDB, OUTPUT);
+  pinMode(LEDC, OUTPUT);
+  pinMode(LEDD, OUTPUT);
+  pinMode(LEDE, OUTPUT);
+  pinMode(LEDF, OUTPUT);
+  pinMode(LEDG, OUTPUT);
   /*
    * You can use for loop to optimize the code as following: 
    * for(int i = 0; i < 7; i++)

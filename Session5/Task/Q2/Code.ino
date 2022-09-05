@@ -13,6 +13,7 @@
 #define COLUMN3 			3
 #define ROW1  				1
 #define MAX_ANALOG_READ		1023
+#define MAX_DIGITAL			255
 #define MAX_VOLTS			5
 
 LiquidCrystal lcd1(RS, EN, D4, D5, D6, D7);
@@ -32,4 +33,5 @@ void loop()
   lcd1.setCursor(COLUMN3, ROW1);
   lcd1.print(ledIntensity);
   lcd1.print(" Volts");
+  analogWrite(LED, (potVal / MAX_ANALOG_READ) * MAX_DIGITAL);
 }

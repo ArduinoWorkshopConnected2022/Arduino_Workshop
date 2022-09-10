@@ -1,3 +1,7 @@
+/*
+ * To know more about interrupts, visit website:
+ * https://dronebotworkshop.com/interrupts/
+ */
 #define BUTTON1 3
 #define BUTTON2 2
 #define EN     6
